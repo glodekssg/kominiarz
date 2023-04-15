@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 6px #bbb;
+}
+
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 0.5rem;
+  text-shadow: 3px 3px 6px #bbb;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  display: grid;
+  justify-items: start;
+  row-gap: 0.5rem;
+  width: fit-content;
+}
+
+li {
+  color: #fff;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+@media (max-width: 800px) {
+  main {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+
+button[id="contactButton"] {
+  padding: 0.5rem 2rem;
+  border: 1px solid #fff;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1.1rem;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+button[id="contactButton"]:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="modal.css">
+  <title>Usługi Kominiarskie</title>
+</head>
+<body>
+  <header>
+    <h1>Usługi Kominiarskie</h1>
+  </header>
+  <main>
+    <h2>Profesjonalne usługi kominiarskie</h2>
+    <p>Doświadczony zespół kominiarzy zapewniających pełen zakres usług dla klientów indywidualnych oraz wspólnot mieszkaniowych.</p>
+    <ul>
+      <li>- Czyszczenie kominów</li>
+      <li>- Naprawa kominów</li>
+      <li>- Inspekcja kamerą</li>
+      <li>- Montaż wkładów kominowych</li>
+      <li>- Usługi dla wspólnot mieszkaniowych</li>
+    </ul>
+    <h2>Dane kontaktowe</h2>
+    
+    <div class="contact-info">
+      <p>Email: kontakt@uslugikominiarskie.pl</p>
+      <p>Telefon: +48 123 456 789</p>
+      <p>Adres: ul. Kominiarska 123, 00-001 Warszawa</p>
+    </div>
+    <button id="contactButton">Skontaktuj się z nami</button>
+  </main>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h3>Formularz kontaktowy</h3>
+      <span id="closeModal" class="close">&times;</span>
+      <form>
+        <label for="name">Imię i nazwisko</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Wiadomość</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button type="submit">Wyślij</button>
+      </form>
+    </div>
+  </div>
+  <script src="modal.js"></script>
+</body>
+</html>
