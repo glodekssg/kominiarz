@@ -30,7 +30,7 @@ export default function BudynekDetail() {
 
       <div className="bg-white rounded-xl border p-5">
         <h3 className="font-semibold mb-3">Mieszkania ({b.apartments.length})</h3>
-        <table className="w-full text-sm">
+        <div className="overflow-x-auto w-full pb-2"><table className="w-full text-sm whitespace-nowrap min-w-[600px]">
           <thead className="bg-slate-50 text-slate-600 text-xs uppercase">
             <tr><th className="text-left p-2">Numer</th><th className="text-left p-2">Piętro</th><th className="text-left p-2">Mieszkaniec</th><th className="text-left p-2">Kod zaproszenia</th></tr>
           </thead>
@@ -44,12 +44,12 @@ export default function BudynekDetail() {
               </tr>
             ))}
           </tbody>
-        </table>
+        </table></div>
       </div>
 
       <div className="bg-white rounded-xl border p-5">
         <h3 className="font-semibold mb-3">Przewody i urządzenia ({b.chimneys.length})</h3>
-        <table className="w-full text-sm">
+        <div className="overflow-x-auto w-full pb-2"><table className="w-full text-sm whitespace-nowrap min-w-[600px]">
           <thead className="bg-slate-50 text-slate-600 text-xs uppercase">
             <tr><th className="text-left p-2">Typ</th><th className="text-left p-2">Paliwo</th><th className="text-left p-2">Urządzenie</th><th className="text-left p-2">Ostatnia kontrola</th><th className="text-left p-2">Wkład</th><th className="text-left p-2">Nasada</th></tr>
           </thead>
@@ -65,12 +65,12 @@ export default function BudynekDetail() {
               </tr>
             ))}
           </tbody>
-        </table>
+        </table></div>
       </div>
 
       <div className="bg-white rounded-xl border p-5">
         <h3 className="font-semibold mb-3">Wizyty ({b.visits.length})</h3>
-        <table className="w-full text-sm">
+        <div className="overflow-x-auto w-full pb-2"><table className="w-full text-sm whitespace-nowrap min-w-[600px]">
           <thead className="bg-slate-50 text-slate-600 text-xs uppercase">
             <tr><th className="text-left p-2">Data</th><th className="text-left p-2">Typ</th><th className="text-left p-2">Status</th><th></th></tr>
           </thead>
@@ -86,7 +86,7 @@ export default function BudynekDetail() {
               </tr>
             ))}
           </tbody>
-        </table>
+        </table></div>
       </div>
     </div>
   );

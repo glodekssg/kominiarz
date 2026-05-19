@@ -135,6 +135,7 @@ const STRINGS = {
   'game.solved_title': { pl: 'Komin Drożny!', en: 'Chimney Cleared!', uk: 'Димохід чистий!', ru: 'Дымоход прочищен!', de: 'Schornstein frei!', vi: 'Ống khói thông rồi!' },
   'game.solved_message': { pl: 'Rewelacyjna robota. Wkład wyczyszczony. Komin jest gotowy do sezonu.', en: 'Brilliant work. Liner cleaned. The chimney is ready for the season.', uk: 'Чудова робота. Димохід очищено. Готовий до сезону.', ru: 'Отличная работа. Дымоход очищен. Готов к сезону.', de: 'Großartige Arbeit. Schornstein gereinigt. Bereit für die Saison.', vi: 'Tuyệt vời. Ống khói đã sạch. Sẵn sàng cho mùa mới.' },
   'game.next_order': { pl: 'Kolejne Zlecenie', en: 'Next Order', uk: 'Наступне замовлення', ru: 'Следующий заказ', de: 'Nächster Auftrag', vi: 'Đơn hàng tiếp' },
+  'game.click_to_start': { pl: 'KLIKNIJ RURĘ ABY ZACZĄĆ', en: 'CLICK A PIPE TO START', uk: 'НАТИСНИ ТРУБУ ЩОБ ПОЧАТИ', ru: 'НАЖМИ ТРУБУ ЧТОБЫ НАЧАТЬ', de: 'KLICKE ROHR ZUM STARTEN', vi: 'NHẤP VÀO ỐNG ĐỂ BẮT ĐẦU' },
 
   // Common
   'common.required': { pl: 'wymagane', en: 'required', uk: 'обов\'язково', ru: 'обязательно', de: 'erforderlich', vi: 'bắt buộc' },

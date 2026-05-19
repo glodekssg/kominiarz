@@ -49,7 +49,7 @@ export default function Klienci() {
         <div className="p-5 border-b">
           <h3 className="font-semibold">Obiekty ({filteredBuildings.length})</h3>
         </div>
-        <table className="w-full text-sm">
+        <div className="overflow-x-auto w-full pb-2"><table className="w-full text-sm whitespace-nowrap min-w-[600px]">
           <thead className="bg-slate-50 text-slate-600 text-xs uppercase">
             <tr>
               <th className="text-left p-3">Adres</th>
@@ -73,7 +73,7 @@ export default function Klienci() {
             ))}
             {filteredBuildings.length === 0 && <tr><td colSpan="5" className="p-10 text-center text-slate-400">Brak wyników.</td></tr>}
           </tbody>
-        </table>
+        </table></div>
       </div>
     </div>
   );

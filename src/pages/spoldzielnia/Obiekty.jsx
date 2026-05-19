@@ -35,7 +35,7 @@ export default function Obiekty() {
             <h3 className="font-semibold">{c.name}</h3>
             <p className="text-sm text-slate-500">{c.address}</p>
           </div>
-          <table className="w-full text-sm">
+          <div className="overflow-x-auto w-full pb-2"><table className="w-full text-sm whitespace-nowrap min-w-[600px]">
             <thead className="bg-slate-50 text-xs uppercase text-slate-600">
               <tr>
                 <th className="text-left p-3">Adres</th>
@@ -58,7 +58,7 @@ export default function Obiekty() {
                 </tr>
               ))}
             </tbody>
-          </table>
+          </table></div>
         </div>
       ))}
     </div>

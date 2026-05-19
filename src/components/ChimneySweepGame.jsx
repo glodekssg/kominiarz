@@ -231,18 +231,18 @@ export default function ChimneySweepGame() {
     setGameStarted(false);
   }
 
-  // Timer dla odliczania startu spadania szczotki
+  // Timer dla odliczania startu spadania szczotki — uruchamia się gdy gameStarted i waiting
   useEffect(() => {
     if (flowState.status !== 'waiting' || !gameStarted) return;
     if (flowState.countdown > 0) {
-      const t = setTimeout(() => {
+      const timer = setTimeout(() => {
         setFlowState(s => ({ ...s, countdown: s.countdown - 1 }));
       }, 1000);
-      return () => clearTimeout(t);
+      return () => clearTimeout(timer);
     } else {
       setFlowState(s => ({ ...s, status: 'flowing' }));
     }
-  }, [flowState]);
+  }, [flowState, gameStarted]);
 
   // Ruch spadającej szczotki kominiarskiej
   useEffect(() => {
@@ -299,10 +299,10 @@ export default function ChimneySweepGame() {
 
       <div className="max-w-4xl mx-auto px-4 relative z-10">
         <AnimatedSection className="text-center mb-8">
-          <h2 className="text-orange-400 font-bold uppercase tracking-widest text-sm mb-2 drop-shadow-md flex justify-center items-center gap-2">
-            <Hammer className="w-4 h-4" /> {t('game.eyebrow')} <Hammer className="w-4 h-4" />
-          </h2>
-          <h3 className="text-3xl md:text-5xl font-black mb-3 text-white drop-shadow-xl tracking-tight">{t('game.title')}</h3>
+          <p className="text-orange-400 font-bold uppercase tracking-widest text-sm mb-2 drop-shadow-md flex justify-center items-center gap-2">
+            <Hammer className="w-4 h-4" aria-hidden="true" /> {t('game.eyebrow')} <Hammer className="w-4 h-4" aria-hidden="true" />
+          </p>
+          <h2 className="text-3xl md:text-5xl font-black mb-3 text-white drop-shadow-xl tracking-tight">{t('game.title')}</h2>
           <p className="text-orange-100/90 max-w-2xl mx-auto font-medium text-lg leading-relaxed shadow-slate-900/50 drop-shadow-md bg-zinc-900/40 p-4 rounded-xl border border-white/5 backdrop-blur-sm">
             {t('game.description')}
           </p>
@@ -325,8 +325,8 @@ export default function ChimneySweepGame() {
           <div className="flex items-center gap-2">
             {!gameStarted && flowState.status === 'waiting' && (
               <div className="flex items-center gap-2 bg-orange-500/20 text-orange-400 px-4 py-2 rounded-xl border border-orange-500/30">
-                <AlertTriangle className="w-5 h-5 animate-pulse" />
-                <span className="font-bold whitespace-nowrap">KLIKNIJ RURĘ ABY ZACZĄĆ</span>
+                <AlertTriangle className="w-5 h-5 animate-pulse" aria-hidden="true" />
+                <span className="font-bold whitespace-nowrap">{t('game.click_to_start')}</span>
               </div>
             )}
             {gameStarted && flowState.status === 'waiting' && (

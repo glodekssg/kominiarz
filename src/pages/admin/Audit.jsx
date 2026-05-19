@@ -12,7 +12,7 @@ export default function AdminAudit() {
       <p className="text-slate-500 text-sm">Historia akcji wykonanych z poziomu panelu administratora.</p>
 
       <div className="bg-white rounded-xl border overflow-hidden">
-        <table className="w-full text-sm">
+        <div className="overflow-x-auto w-full pb-2"><table className="w-full text-sm whitespace-nowrap min-w-[600px]">
           <thead className="bg-slate-50 text-xs uppercase text-slate-600">
             <tr>
               <th className="text-left p-3">Data</th>
@@ -34,7 +34,7 @@ export default function AdminAudit() {
             ))}
             {log.length === 0 && <tr><td colSpan="5" className="p-10 text-center text-slate-400">Brak wpisów.</td></tr>}
           </tbody>
-        </table>
+        </table></div>
       </div>
     </div>
   );

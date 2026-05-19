@@ -74,7 +74,7 @@ function Cooperatives() {
         className="px-4 py-2 bg-orange-500 text-white rounded">+ Nowa spółdzielnia</button>
     </div>
     <div className="bg-white rounded-xl border overflow-hidden mt-3">
-      <table className="w-full text-sm">
+      <div className="overflow-x-auto w-full pb-2"><table className="w-full text-sm whitespace-nowrap min-w-[600px]">
         <thead className="bg-slate-50 text-xs uppercase text-slate-600">
           <tr><th className="text-left p-3">Nazwa</th><th className="text-left p-3">NIP</th><th className="text-left p-3">Adres</th><th className="text-left p-3">Budynki</th><th></th></tr>
         </thead>
@@ -93,7 +93,7 @@ function Cooperatives() {
           ))}
           {rows.length === 0 && <tr><td colSpan="5" className="p-10 text-center text-slate-400">Brak.</td></tr>}
         </tbody>
-      </table>
+      </table></div>
     </div>
 
     {edit && (
@@ -149,7 +149,7 @@ function Buildings() {
         className="px-4 py-2 bg-orange-500 text-white rounded">+ Nowy budynek</button>
     </div>
     <div className="bg-white rounded-xl border overflow-hidden mt-3">
-      <table className="w-full text-sm">
+      <div className="overflow-x-auto w-full pb-2"><table className="w-full text-sm whitespace-nowrap min-w-[600px]">
         <thead className="bg-slate-50 text-xs uppercase text-slate-600">
           <tr><th className="text-left p-3">Adres</th><th className="text-left p-3">Miasto</th><th className="text-left p-3">Spółdzielnia</th><th className="text-left p-3">Typ</th><th className="text-left p-3">Mieszkań</th><th></th></tr>
         </thead>
@@ -168,7 +168,7 @@ function Buildings() {
             </tr>
           ))}
         </tbody>
-      </table>
+      </table></div>
     </div>
 
     {edit && (
@@ -258,7 +258,7 @@ function Apartments() {
         className="px-4 py-2 bg-orange-500 text-white rounded">+ Nowe mieszkanie</button>
     </div>
     <div className="bg-white rounded-xl border overflow-hidden mt-3">
-      <table className="w-full text-sm">
+      <div className="overflow-x-auto w-full pb-2"><table className="w-full text-sm whitespace-nowrap min-w-[600px]">
         <thead className="bg-slate-50 text-xs uppercase text-slate-600">
           <tr><th className="text-left p-3">Adres</th><th className="text-left p-3">Numer</th><th className="text-left p-3">Piętro</th><th className="text-left p-3">Mieszkaniec</th><th className="text-left p-3">Kod zaproszenia</th><th></th></tr>
         </thead>
@@ -279,7 +279,7 @@ function Apartments() {
           ))}
           {filtered.length === 0 && <tr><td colSpan="6" className="p-10 text-center text-slate-400">Brak.</td></tr>}
         </tbody>
-      </table>
+      </table></div>
     </div>
 
     {edit && (
@@ -359,7 +359,7 @@ function Chimneys() {
     </div>
 
     <div className="bg-white rounded-xl border overflow-hidden mt-3">
-      <table className="w-full text-sm">
+      <div className="overflow-x-auto w-full pb-2"><table className="w-full text-sm whitespace-nowrap min-w-[600px]">
         <thead className="bg-slate-50 text-xs uppercase text-slate-600">
           <tr><th className="text-left p-2">Adres</th><th className="text-left p-2">Lokal</th><th className="text-left p-2">Typ</th><th className="text-left p-2">Paliwo</th><th className="text-left p-2">Urządzenie</th><th className="text-left p-2">Ost. kontrola</th><th className="text-left p-2">Wkład</th><th className="text-left p-2">Nasada</th><th></th></tr>
         </thead>
@@ -382,7 +382,7 @@ function Chimneys() {
           ))}
           {filtered.length === 0 && <tr><td colSpan="9" className="p-10 text-center text-slate-400">Brak.</td></tr>}
         </tbody>
-      </table>
+      </table></div>
     </div>
 
     {edit && (

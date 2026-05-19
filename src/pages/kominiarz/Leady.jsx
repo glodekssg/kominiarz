@@ -97,7 +97,7 @@ export default function Leady() {
       </div>
 
       <div className="bg-white rounded-xl border overflow-hidden">
-        <table className="w-full text-sm">
+        <div className="overflow-x-auto w-full pb-2"><table className="w-full text-sm whitespace-nowrap min-w-[600px]">
           <thead className="bg-slate-50 text-xs uppercase text-slate-600">
             <tr>
               <th className="text-left p-3">Klient</th>
@@ -138,7 +138,7 @@ export default function Leady() {
             ))}
             {filtered.length === 0 && <tr><td colSpan="7" className="p-10 text-center text-slate-400">Brak zapytań.</td></tr>}
           </tbody>
-        </table>
+        </table></div>
       </div>
 
       {/* CONTACT MODAL */}
