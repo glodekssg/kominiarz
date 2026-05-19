@@ -88,7 +88,7 @@ export default function Wizyty() {
       </div>
 
       <div className="bg-white rounded-xl border overflow-hidden">
-        <table className="w-full text-sm">
+        <div className="overflow-x-auto w-full pb-2"><table className="w-full text-sm whitespace-nowrap min-w-[600px]">
           <thead className="bg-slate-50 text-slate-600 text-xs uppercase">
             <tr>
               <th className="text-left p-3">Data</th>
@@ -115,7 +115,7 @@ export default function Wizyty() {
             ))}
             {filtered.length === 0 && <tr><td colSpan="5" className="p-10 text-center text-slate-400">Brak wizyt do wyświetlenia.</td></tr>}
           </tbody>
-        </table>
+        </table></div>
       </div>
 
       {show && (

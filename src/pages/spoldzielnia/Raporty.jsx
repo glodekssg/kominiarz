@@ -39,7 +39,7 @@ export default function Raporty() {
       </div>
 
       <div className="bg-white rounded-xl border overflow-hidden">
-        <table className="w-full text-sm">
+        <div className="overflow-x-auto w-full pb-2"><table className="w-full text-sm whitespace-nowrap min-w-[600px]">
           <thead className="bg-slate-50 text-xs uppercase text-slate-600">
             <tr>
               <th className="text-left p-3">Data</th>
@@ -58,7 +58,7 @@ export default function Raporty() {
               </tr>
             ))}
           </tbody>
-        </table>
+        </table></div>
       </div>
     </div>
   );
