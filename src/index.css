@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1e3a8a; /* Deep Navy Blue */
+  --color-secondary: #f97316; /* Vibrant Orange */
+  --color-accent: #ea580c; /* Darker Orange */
+  --color-background: #ffffff;
+  --color-surface: #f1f5f9; /* Light Slate */
+  --font-sans: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans bg-background text-slate-900;
+  }
+}
+
+/* Custom Utilities for Parallax and Animations */
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
